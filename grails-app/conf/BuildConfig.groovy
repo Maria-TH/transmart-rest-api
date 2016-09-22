@@ -41,7 +41,7 @@ grails.project.fork = [
 def dm, dmClass
 try {
     dmClass = new GroovyClassLoader().parseClass(
-            new File('../transmart-dev/DependencyManagement.groovy'))
+            new File('../transmart-dev/TransmartRestApiDependencyManagement.groovy'))
 } catch (Exception e) {
 }
 if (dmClass) {
